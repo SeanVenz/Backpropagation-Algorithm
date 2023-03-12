@@ -153,7 +153,7 @@ namespace BackPropagation_Calculation
             nn.setInputs(0, Convert.ToDouble(textBox1.Text));
 
             nn.run();
-            textBox3.Text = "" + nn.getOuputData(0);
+            textBox3.Text = "" + nn.getOuputData(0) * 26.13724138;
 
         }
     }

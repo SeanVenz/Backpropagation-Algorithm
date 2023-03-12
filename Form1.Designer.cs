@@ -71,7 +71,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 254);
+            this.textBox1.Location = new System.Drawing.Point(124, 254);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(138, 22);
             this.textBox1.TabIndex = 3;
@@ -93,20 +93,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(198, 232);
+            this.label1.Location = new System.Drawing.Point(146, 232);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 16);
+            this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Input";
+            this.label1.Text = "Input In Kilotons";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(374, 232);
+            this.label2.Location = new System.Drawing.Point(296, 232);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.Size = new System.Drawing.Size(220, 16);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Output";
+            this.label2.Text = "Output in Mean Annual Temperature";
             // 
             // label3
             // 
@@ -132,7 +132,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Backpropagation Application";
             this.ResumeLayout(false);
             this.PerformLayout();
 

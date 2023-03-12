@@ -145,6 +145,10 @@ namespace BackPropagation_Calculation
                 nn.setDesiredOutput(0, 26.45);
                 nn.learn();
 
+                nn.setInputs(0, 142240);
+                nn.setDesiredOutput(0, 26.11);
+                nn.learn();
+
             }
         }
 
@@ -155,6 +159,47 @@ namespace BackPropagation_Calculation
             nn.run();
             textBox3.Text = "" + nn.getOuputData(0) * 26.13724138;
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DataTable table = new DataTable();
+
+            table.Columns.Add("CO2 Emissions (in kT)", typeof(int));
+            table.Columns.Add("PH Mean Annual Temperature", typeof(float));
+
+            table.Rows.Add(41080, 26.08);
+            table.Rows.Add(40650, 26.07);
+            table.Rows.Add(44020, 25.91);
+            table.Rows.Add(47800, 26.02);
+            table.Rows.Add(51510, 26.14);
+            table.Rows.Add(61750, 26.01);
+            table.Rows.Add(67220, 25.88);
+            table.Rows.Add(74790, 25.97);
+            table.Rows.Add(74220, 26.65);
+            table.Rows.Add(71580, 26.0);
+            table.Rows.Add(72100, 26.13);
+            table.Rows.Add(70480, 26.19);
+            table.Rows.Add(71570, 26.07);
+            table.Rows.Add(73630, 25.95);
+            table.Rows.Add(75140, 26.04);
+            table.Rows.Add(76670, 26.14);
+            table.Rows.Add(69470, 26.2);
+            table.Rows.Add(73220, 26.19);
+            table.Rows.Add(75150, 25.87);
+            table.Rows.Add(76300, 25.9);
+            table.Rows.Add(81930, 26.17);
+            table.Rows.Add(82629, 25.93);
+            table.Rows.Add(86180, 26.27);
+            table.Rows.Add(95500, 26.28);
+            table.Rows.Add(101820, 26.15);
+            table.Rows.Add(111010, 26.36);
+            table.Rows.Add(121960, 26.7);
+            table.Rows.Add(133500, 26.26);
+            table.Rows.Add(138570, 26.45);
+            table.Rows.Add(142240, 26.11);
+
+            dataGridView1.DataSource = table;
         }
     }
 }
